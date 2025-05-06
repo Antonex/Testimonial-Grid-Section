@@ -1,0 +1,155 @@
+@import url("https://fonts.google.com/specimen/Barlow+Semi+Condensed");
+
+:root {
+  --Purple-50: hsl(260, 100%, 95%);
+  --Purple-300: hsl(264, 82%, 80%);
+  --Purple-500: hsl(263, 55%, 52%);
+  --White: hsl(0, 0%, 100%);
+  --Grey-100: hsl(214, 17%, 92%);
+  --Grey-200: hsl(0, 0%, 81%);
+  --Grey-400: hsl(224, 10%, 45%);
+  --Grey-500: hsl(217, 19%, 35%);
+  --Dark-blue: hsl(219, 29%, 14%);
+  --Black: hsl(0, 0%, 7%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--Grey-100);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.container {
+  height: auto;
+  width: 65%;
+  padding: 1rem;
+}
+
+.container .testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.container .testimonial-grid .testimonial {
+  /* background-color: blueviolet; */
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.container .testimonial-grid .testimonial .testimonial-header {
+  display: flex;
+  margin: 0 0 1.5rem 0;
+}
+
+.container .testimonial-grid .testimonial .testimonial-header img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  margin: 0 1rem 0 0;
+}
+
+.container .testimonial-grid .testimonial .testimonial-header div > h2,
+.container .testimonial-grid .testimonial .testimonial-header div > p {
+  /* color: var(--White); */
+  font-size: 1rem;
+}
+
+.container .testimonial-grid .testimonial-1 > .testimonial-header h2,
+.container .testimonial-grid .testimonial-1 > .testimonial-header p,
+.container .testimonial-grid .testimonial-2 > .testimonial-header h2,
+.container .testimonial-grid .testimonial-2 > .testimonial-header p,
+.container .testimonial-grid .testimonial-4 > .testimonial-header h2,
+.container .testimonial-grid .testimonial-4 > .testimonial-header p {
+  color: var(--White);
+}
+
+.container .testimonial-grid .testimonial .testimonial-header div > h2 {
+  font-weight: 600;
+}
+
+.container .testimonial-grid .testimonial .testimonial-lead {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  color: var(--White);
+}
+
+.container .testimonial-grid .testimonial .testimonial-quote {
+  font-weight: 500;
+  color: var(--Grey-200);
+  font-size: 1.1rem;
+}
+
+.container .testimonial-grid .testimonial-1 .testimonial-header img {
+  border: 2px solid var(--Purple-300);
+}
+
+.container .testimonial-grid .testimonial-4 .testimonial-header img {
+  border: 2px solid var(--Purple-500);
+}
+
+.testimonial-3,
+.testimonial-5 {
+  background-color: var(--White);
+}
+
+.container .testimonial-grid .testimonial-3 .testimonial-quote,
+.container .testimonial-grid .testimonial-5 .testimonial-quote {
+  color: var(--Grey-400);
+}
+
+.container .testimonial-grid .testimonial-3 .testimonial-lead,
+.container .testimonial-grid .testimonial-5 .testimonial-lead {
+  color: var(--Grey-400);
+}
+
+.container .testimonial-grid .testimonial-3 > .testimonial-header h2,
+.container .testimonial-grid .testimonial-3 > .testimonial-header p,
+.container .testimonial-grid .testimonial-5 > .testimonial-header h2,
+.container .testimonial-grid .testimonial-5 > .testimonial-header p {
+  color: var(--Grey-500);
+}
+
+.container .testimonial-grid .testimonial:nth-child(1) {
+  background-image: url("/src/images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-color: var(--Purple-500);
+  background-position: 30rem 2rem;
+  grid-column: span 2;
+}
+
+.container .testimonial-grid .testimonial:nth-child(2) {
+  background-color: var(--Grey-500);
+}
+
+.container .testimonial-grid .testimonial:nth-child(3) {
+  grid-row: span 2;
+}
+
+.container .testimonial-grid .testimonial:nth-child(5) {
+  background-color: var(--Dark-blue);
+  grid-column: 2 / 4;
+}
+
+@media screen and (max-width: 1100px) {
+
+  .container {
+    width: 90%;
+  }
+
+  .container .testimonial-grid {
+    display: flex;
+    flex-direction: column;
+    max-width: 40rem;
+    margin: 1rem;
+  }
+}
