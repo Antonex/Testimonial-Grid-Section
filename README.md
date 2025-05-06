@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/Antonex/Testimonial-Grid-Section/)
-- Live Site URL: [Live site]()
+- Live Site URL: [Live site](https://antonex.github.io/Testimonial-Grid-Section/)
 
 ## My process
 
