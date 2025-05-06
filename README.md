@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github]()
+- Solution URL: [Github](https://github.com/Antonex/Testimonial-Grid-Section/)
 - Live Site URL: [Live site]()
 
 ## My process
@@ -38,6 +38,7 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- Grid
 
 ## Author
 
